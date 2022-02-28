@@ -39,6 +39,7 @@ h1, h2, #name{
 
 #content-container{
     width:50vw;
+    max-width:1000px;
     /* height: auto; */
     position: relative;
     left:50%;
