@@ -147,3 +147,7 @@ h1, h2, #name{
 a{
     text-decoration: none;
 }
+.link-container{
+    margin-top:40px;
+    margin-bottom:20px;
+}
