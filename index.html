@@ -4,106 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Lucas Cornwell</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet"> 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div id="content-container" style="max-width:1000px;">
-        <div id="top">
-            <div id="texts">
-                <h1 id="name">Lucas Cornwell</h1>
-                <h1 id="briefBio">Second year undergraduate studying Computer Engineering at the University of Washington. </h1>
-            </div>
+    <div class="d-flex container-fluid content">
+        <div class="intro">
+            <div class="name">Lucas Cornwell</div>
+            <div class="bio">Rising junior studying Computer Science at the University of Washington</div>
         </div>
-        <div id="projects">
-            <h2 class="section">Projects</h2>
-            <div class="tile-content">
-                <a href="https://spoonk.github.io/cellular-automata" target="_blank_">
-                <div class="project-card">
-                    <img src="images/automata.png" alt="Elementary Cellular Automata" class="project-image"> 
-
-                    <div class="project-title">
-                        <p class="title-text">
-                            Elementary Cellular Automata
-                        </p>
-                    </div>
-                    <div class="project-description">
-                        <div class="p-text">
-                            React application to visualize one-dimensional cellular automata
-                            <ul class="skills">
-                                <li style="color:rgb(255, 180, 40);">Javascript</li>
-                                <li style="color:rgb(58, 221, 58)"><span style="color:rgb(58, 221, 58)"> HTML</span> / <span style="color:rgb(223, 47, 223)">CSS</span></li>
-                                <li style="color:rgb(11, 198, 255)"">React</li>
-                            </ul>
-                        </div>
-                        <div class="link-container">
-                            <div>
-                                <a class="link github" href="https://github.com/spoonk/cellular-automata/tree/master" target="_blank_">Github repo</a>
+        <div class="projects">
+            <div class="section">Projects</div>
+            <div class="container projects-container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 project-container">
+                        <div class="project" id="automata">
+                            <div class="project-header">
+                                <div class="img-container"><img src="./images/automata.png" alt="" class="project-image"></div>
+                                <div class="project-name">Elementary Cellular Automata</div>
                             </div>
-                            <div>
-                                <a class="link github" href="https://spoonk.github.io/cellular-automata" target="_blank_">view project</a>
+                            <div class="project-body">
+                                <div class="description">
+                                    A web app to visualize the evolution
+                                    of a 1-dimensional cellular automata
+                                </div>
+                                <div class="bottom-stuff">
+                                    <div class="tags">
+                                        <div class="tag react">react</div>
+                                        <div class="tag js">javascript </div>
+                                        <div class="tag html">HTML</div>
+                                        <div class="tag css">CSS</div>
+                                    </div>
+                                    <div class="links">
+                                        <a href="https://spoonk.github.io/cellular-automata/" target="_blank">website</a> 
+                                        |
+                                        <a href="https://github.com/spoonk/cellular-automata" target="_blank">repository</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 project-container">
+                        <div class="project" id="RNN">
+                            <div class="project-header">
+                                <div class="img-container"><img src="./images/rnn.png" alt="" class="project-image"></div>
+                                <div class="project-name">RNN Text Generation</div>
+                            </div>
+                            <div class="project-body">
+                                <div class="description">
+                                    Application that generates text in the style of a specific author/book
+                                </div>
+                                <div class="bottom-stuff">
+                                    <div class="tags">
+                                        <div class="tag node">node</div>
+                                        <div class="tag express">express</div>
+                                        <div class="tag heroku">heroku</div>
+                                        <div class="tag react">react</div>
+                                        <div class="tag js">javascript </div>
+                                        <div class="tag html">HTML</div>
+                                        <div class="tag css">CSS</div>
+                                        <div class="tag python">python</div>
+                                        <div class="tag tensorflow">tensorflow</div>
+                                    </div>
+                                    <div class="links">
+                                        <a href="https://spoonk.github.io/RNN-Text-Generation/" target="_blank">website</a> 
+                                        |
+                                        <a href="https://github.com/spoonk/RNN-Text-Generation" target="_blank">repository</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 project-container">
+                        <div class="project" id="reddit">
+                            <div class="project-header">
+                                <div class="img-container"><img src="./images/reddit.jpg" alt="" class="project-image"></div>
+                                <div class="project-name">Subreddit Browser</div>
+                            </div>
+                            <div class="project-body">
+                                <div class="description">
+                                    A reddit client to view the posts of any subreddit
+                                </div>
+                                <div class="bottom-stuff">
+                                    <div class="tags">
+                                        <div class="tag react">react</div>
+                                        <div class="tag js">javascript </div>
+                                        <div class="tag html">HTML</div>
+                                        <div class="tag css">CSS</div>
+                                    </div>
+                                    <div class="links">
+                                        <a href="https://spoonk.github.io/subreddit-browser/" target="_blank">website</a> 
+                                        |
+                                        <a href="https://github.com/spoonk/subreddit-browser" target="_blank">repository</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 project-container">
+                        <div class="project" id="spotify">
+                            <div class="project-header">
+                                <div class="img-container"><img src="./images/spotify.png" alt="" class="project-image"></div>
+                                <div class="project-name">Spotify Visualizer</div>
+                            </div>
+                            <div class="project-body">
+                                <div class="description">
+                                    Displays what you are currently listening to on Spotify
+                                </div>
+                                <div class="bottom-stuff">
+                                    <div class="tags">
+                                        <div class="tag node">node</div>
+                                        <div class="tag express">express</div>
+                                        <div class="tag heroku">heroku</div>
+                                        <div class="tag react">react</div>
+                                        <div class="tag js">javascript </div>
+                                        <div class="tag html">HTML</div>
+                                        <div class="tag css">CSS</div>
+                                    </div>
+                                    <div class="links">
+                                        <!-- <a href="https://spoonk.github.io/subreddit-browser/" target="_blank">website</a>  -->
+                                        <!-- | -->
+                                        <a href="https://github.com/spoonk/simple-spotify-visualizer" target="_blank">repository</a> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </a>
-                <a href="https://spoonk.github.io/subreddit-browser" target="_blank_">
-                    <div class="project-card">
-                        <img src="images/reddit.jpg" alt="Subreddit Browser" class="project-image"> 
-                        <div class="project-title">
-                            <p class="title-text">
-                                Subreddit Browser
-                            </p>
-                        </div>
-                        <div class="project-description">
-                            <div class="p-text">
-                                Reddit Client for viewing posts in subreddits
-                                <ul class="skills">
-                                    <li style="color:rgb(255, 180, 40);">Javascript</li>
-                                    <li style="color:rgb(58, 221, 58)"><span style="color:rgb(58, 221, 58)"> HTML</span> / <span style="color:rgb(223, 47, 223)">CSS</span></li>
-                                    <li style="color:rgb(11, 198, 255)"">React</li>
-                                </ul>
-                            </div>
-                            <div class="link-container">
-                                <div>
-                                    <a class="link github" href="https://github.com/spoonk/subreddit-browser" target="_blank_">Github repo</a>
-                                </div>
-                                <div>
-                                    <a class="link github" href="https://spoonk.github.io/subreddit-browser" target="_blank_">view project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                <a href="https://github.com/spoonk/anime-faces-GAN/blob/master/nb.ipynb" target="_blank_">
-                    <div class="project-card">
-                        <img src="images/faces.jpg" alt="Anime Faces GAN" class="project-image"> 
-                        <div class="project-title">
-                            <p class="title-text">
-                                Anime Faces GAN
-                            </p>
-                        </div>
-                        <div class="project-description">
-                            <div class="p-text">
-                                Jupyter Notebook containing an implementation of DCGAN
-                                <ul class="skills">
-                                    <li style="color:rgb(255, 180, 40);">Tensorflow</li>
-                                    <li style="color:rgb(221, 58, 58)">keras</li>
-                                    <li style="color:rgb(182, 70, 226)"">Python</li>
-                                </ul>
-                            </div>
-                            <div class="link-container">
-                                <a class="link github" href="https://github.com/spoonk/anime-faces-GAN" target="_blank_">Github repo</a>
-                            </div>
-                        </div>
-                    </div>
-                </a>
             </div>
-            
         </div>
     </div>
 </body>
+
+<script>
+    document.getElementById('automata').addEventListener('click', (e) =>{
+        if (e.target.tagName != 'A'){window.open('https://spoonk.github.io/cellular-automata/', '_blank');}
+    })
+    document.getElementById('RNN').addEventListener('click', (e) =>{
+        if (e.target.tagName != 'A'){window.open('https://spoonk.github.io/RNN-Text-Generation/', '_blank');}
+    })
+    document.getElementById('reddit').addEventListener('click', (e) =>{
+        if (e.target.tagName != 'A'){window.open('https://spoonk.github.io/subreddit-browser/', '_blank');}
+    })
+</script>
 </html>
