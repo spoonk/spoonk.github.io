@@ -107,6 +107,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-6 col-sm-12 project-container">
                         <div class="project" id="spotify">
                             <div class="project-header">
@@ -121,16 +122,60 @@
                                     <div class="tags">
                                         <div class="tag node">node</div>
                                         <div class="tag express">express</div>
-                                        <div class="tag heroku">heroku</div>
                                         <div class="tag react">react</div>
                                         <div class="tag js">javascript </div>
                                         <div class="tag html">HTML</div>
                                         <div class="tag css">CSS</div>
                                     </div>
                                     <div class="links">
-                                        <!-- <a href="https://spoonk.github.io/subreddit-browser/" target="_blank">website</a>  -->
+                                        <!-- <a href="https://spoonk.github.io/simple-spotify-visualizer/" target="_blank">website</a>  -->
                                         <!-- | -->
                                         <a href="https://github.com/spoonk/simple-spotify-visualizer" target="_blank">repository</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 project-container">
+                        <div class="project" id="anime">
+                            <div class="project-header">
+                                <div class="img-container"><img src="./images/faces.jpg" alt="" class="project-image"></div>
+                                <div class="project-name">Anime Faces GAN</div>
+                            </div>
+                            <div class="project-body">
+                                <div class="description">
+                                    Jupyter Notebook where I attempted to train an Generative Adversarial
+                                    Network on a dataset of anime faces
+                                </div>
+                                <div class="bottom-stuff">
+                                    <div class="tags">
+                                        <div class="tag python">python</div>
+                                        <div class="tag tensorflow">tensorflow</div>
+                                    </div>
+                                    <div class="links">
+                                        <a href="https://github.com/spoonk/anime-faces-GAN" target="_blank">repository</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 project-container">
+                        <div class="project" id="ascii">
+                            <div class="project-header">
+                                <div class="img-container"><img src="./images/ascii.png" alt="" class="project-image"></div>
+                                <div class="project-name">Ascii Cam</div>
+                            </div>
+                            <div class="project-body">
+                                <div class="description">
+                                    Takes a picture with your webcam, convert it to ascii characters, and outputs it to your terminal.
+                                    Also has a video version.
+                                </div>
+                                <div class="bottom-stuff">
+                                    <div class="tags">
+                                        <div class="tag python">python</div>
+                                    </div>
+                                    <div class="links">
+                                        <a href="https://github.com/spoonk/ascii_term" target="_blank">repository</a> 
                                     </div>
                                 </div>
                             </div>
@@ -151,6 +196,15 @@
     })
     document.getElementById('reddit').addEventListener('click', (e) =>{
         if (e.target.tagName != 'A'){window.open('https://spoonk.github.io/subreddit-browser/', '_blank');}
+    })
+    document.getElementById('spotify').addEventListener('click', (e) =>{
+        if (e.target.tagName != 'A'){window.open('https://github.com/spoonk/simple-spotify-visualizer', '_blank');}
+    })
+    document.getElementById('anime').addEventListener('click', (e) =>{
+        if (e.target.tagName != 'A'){window.open('https://github.com/spoonk/anime-faces-GAN', '_blank');}
+    })
+    document.getElementById('ascii').addEventListener('click', (e) =>{
+        if (e.target.tagName != 'A'){window.open('https://github.com/spoonk/ascii_term', '_blank');}
     })
 </script>
 </html>
